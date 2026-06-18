@@ -82,12 +82,10 @@ return (
     <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md border border-gray-100">
 
       <div className="text-center mb-8">
-        <span className="inline-block bg-yellow-400/20 text-yellow-600 text-xs font-semibold px-4 py-1.5 rounded-full mb-3 tracking-widest uppercase">
-          Acesso Restrito
-        </span>
+
 
         <h1 className="text-2xl font-black text-[#1a1a2e]">
-          Entrar no Sistema
+          Acessar conta
         </h1>
       </div>
 

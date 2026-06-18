@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 import { temPermissao } from "@/lib/auth";
 
 export async function POST(req) {
-  // só admin cria técnico
   if (!temPermissao(req, "administrador")) {
     return Response.json({ error: "Sem permissão" }, { status: 403 });
   }
@@ -25,7 +24,7 @@ export async function POST(req) {
 }
 
 export async function GET(req) {
-  if (!temPermissao(req, "administrador", "tecnico")) {
+  if (!temPermissao(req, "administrador", "tecnico", "atleta")) {
     return Response.json({ error: "Sem permissão" }, { status: 403 });
   }
 

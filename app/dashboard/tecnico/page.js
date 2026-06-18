@@ -82,10 +82,7 @@ export default function DashboardTecnico() {
     <div className="p-8 space-y-8">
 
       <div>
-        <div className="flex items-center gap-3 mb-1">
-          <div className="w-8 h-[2px] bg-yellow-400" />
-          <span className="text-yellow-600 text-xs font-semibold tracking-widest uppercase">Área do Técnico</span>
-        </div>
+
         <h1 className="text-3xl font-black text-[#1a1a2e]">Dashboard</h1>
         <p className="text-gray-400 mt-1 text-sm">Visualize e edite as informações dos atletas.</p>
       </div>
