@@ -127,10 +127,10 @@ return (
       <p className="text-center text-sm text-gray-500 mt-6">
         Não tem conta?{" "}
         <Link
-          href="/cadastro"
+          href="/#contato"
           className="text-yellow-600 font-semibold hover:underline"
         >
-          Cadastre-se
+          Entrar em contato
         </Link>
       </p>
 

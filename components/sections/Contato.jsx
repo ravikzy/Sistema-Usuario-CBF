@@ -51,20 +51,17 @@ export default function Contato() {
     <section id="contato" className="bg-[#1a1a2e] py-24">
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-14 text-center">
-          <span className="inline-block rounded-full bg-yellow-400/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-yellow-400">
-            Fale conosco
-          </span>
+
           <h2 className="mt-5 text-4xl font-extrabold text-white sm:text-5xl">
-            Entre em contato
+            Área de comentários
           </h2>
           <p className="mt-3 text-white/50">
-            Dúvidas, sugestões ou parcerias — estamos prontos para te atender.
+            Dúvidas, sugestões ou parcerias
           </p>
         </div>
 
 
 
-        {/* Formulário — card branco */}
         <div className="rounded-2xl bg-white p-8 shadow-sm">
           <h3 className="mb-6 text-center text-xl font-bold text-[#1a1a2e]">
             Envie sua mensagem

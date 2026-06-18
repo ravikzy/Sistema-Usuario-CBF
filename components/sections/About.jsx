@@ -19,11 +19,8 @@ export default function About() {
     <section id="sobre" className="bg-[#1a1a2e] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
-          {/* Esquerda — texto */}
           <div>
-            <span className="inline-block rounded-full bg-yellow-400/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-yellow-400">
-              Quem somos
-            </span>
+
 
             <h2 className="mt-5 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
               O coração do <br />

@@ -97,6 +97,8 @@ export default function DashboardAtleta() {
         </div>
       </div>
 
+      
+
       {aba === "atletas" && (
         <div className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
           <table className="w-full">

@@ -39,24 +39,16 @@ export default function Header() {
 
             <nav className="flex gap-3 items-center">
               <Link
-                href="/cadastro"
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all border ${pathname === "/cadastro"
+                href="/login"
+                className={` px-5 py-2 rounded-full text-sm font-semibold transition-all border ${pathname === "/login"
                     ? "bg-yellow-400 text-[#1a1a2e] border-yellow-400"
                     : "bg-transparent text-white border-white/30 hover:border-yellow-400 hover:text-yellow-400"
                   }`}
               >
-                Cadastrar-se
-              </Link>
-
-              <Link
-                href="/login"
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${pathname === "/login"
-                    ? "bg-yellow-400 text-[#1a1a2e]"
-                    : "bg-yellow-400 text-[#1a1a2e] hover:bg-yellow-300"
-                  }`}
-              >
                 Login
               </Link>
+
+
             </nav>
 
           </div>

@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 import { temPermissao } from "@/lib/auth";
 
 export async function POST(req) {
-  // só admin pode criar outro admin
   if (!temPermissao(req, "administrador")) {
     return Response.json({ error: "Sem permissão" }, { status: 403 });
   }
