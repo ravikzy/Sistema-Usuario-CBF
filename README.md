@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CBF — Sistema de Usuários
 
-## Getting Started
+Sistema web inspirado na Confederação Brasileira de Futebol (CBF), desenvolvido para gerenciamento de usuários, autenticação e controle de acesso.
 
-First, run the development server:
+O projeto utiliza uma interface baseada no universo do futebol brasileiro e reúne recursos de cadastro, login, gerenciamento de usuários e integração com banco de dados.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto foi desenvolvido com o objetivo de aplicar na prática conceitos de desenvolvimento web full stack, utilizando Next.js e React na construção da interface e PostgreSQL para armazenamento dos dados.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+A aplicação possui uma estrutura organizada entre páginas, componentes e serviços, além de recursos de autenticação e controle de acesso.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funcionalidades
 
-## Learn More
+- Cadastro de usuários
+- Login e autenticação
+- Controle de sessão
+- Gerenciamento de usuários
+- Controle de acesso por perfil
+- Proteção de páginas e recursos
+- Integração com banco de dados
+- Interface responsiva
+- Componentes reutilizáveis
+- Navegação entre as áreas do sistema
 
-To learn more about Next.js, take a look at the following resources:
+## Segurança
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O sistema utiliza autenticação baseada em **JWT** para controle de sessão e **bcrypt** para proteção das senhas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O acesso às áreas do sistema é controlado de acordo com o perfil do usuário, evitando que recursos protegidos sejam acessados sem a devida autorização.
 
-## Deploy on Vercel
+## Banco de Dados
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto utiliza **PostgreSQL** para armazenamento e gerenciamento das informações da aplicação.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A comunicação com o banco é realizada através do pacote `pg`.
+
+Entre os dados gerenciados pelo sistema estão as informações relacionadas aos usuários e seus respectivos perfis e permissões.
+
+## Stack
+
+- **Next.js 15**
+- **React 19**
+- **Tailwind CSS v4**
+- **PostgreSQL**
+- **Node.js**
+- **JWT**
+- **bcrypt**
+- **Font Awesome**
+
+## Estrutura do Projeto
+
+A aplicação utiliza o App Router do Next.js e organiza o código em diferentes áreas de responsabilidade.
+
+Principais diretórios:
+
+```text
+/app
+/components
+/lib
+/public
